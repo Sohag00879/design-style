@@ -1,106 +1,141 @@
 .section-with-aiko-slider .content-wrapper {
   box-sizing: border-box !important;
+  padding-top: 50px; /* Add padding to the top for better visibility */
 }
+
 .sqs-gallery-design-carousel {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+
 .sqs-gallery-design-carousel.loaded-carousel {
   opacity: 1 !important;
 }
+
 .aiko-plugin {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   color: white; /* Default color for text */
+  background: linear-gradient(135deg, #0d47a1, #1a237e); /* Gradient background for the entire plugin */
+  border-radius: 12px; /* Rounded corners for the plugin */
+  padding: 20px; /* Padding inside the plugin */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for the plugin */
 }
+
 .aiko-plugin .summary-item-list-container.sqs-gallery-container,
 .aiko-plugin .summary-block-header {
   display: none;
 }
+
 .aiko-plugin .aiko-wrapper {
   display: flex;
-  align-items: center;
-  margin: 0 auto;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space items evenly */
   max-width: 90%;
 }
+
 @media only screen and (max-width: 1000px) {
   .aiko-plugin .aiko-wrapper {
       flex-wrap: wrap;
   }
 }
+
 .aiko-plugin .left-part {
   width: 35%;
-  margin-right: 4%;
+  margin-right: 5%;
   padding: 20px;
 }
+
 .aiko-plugin .right-part {
   width: 60%;
 }
+
 @media only screen and (max-width: 640px) {
   .aiko-plugin .left-part,
   .aiko-plugin .right-part {
       width: 100%;
+      margin-right: 0;
+      padding: 10px; /* Reduce padding for smaller screens */
   }
 }
+
 .aiko-plugin .image-slide {
-  background: linear-gradient(135deg, #1a237e, #0d47a1); /* Attractive gradient background */
+  background: linear-gradient(135deg, #ff6f00, #ff8f00); /* Gradient background for image slide */
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
   color: white;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .aiko-plugin .image-slide:hover {
   transform: scale(1.02);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
 }
+
 .aiko-plugin h3 {
-  font-size: 1.8em;
-  color: #ffeb3b; /* Accent color for titles */
+  font-size: 2em; /* Increase size for prominence */
+  color: #ffeb3b; /* Bright accent color for titles */
   margin: 0 0 10px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Strong shadow for readability */
 }
+
 .aiko-plugin p {
-  font-size: 1.1em;
+  font-size: 1.2em; /* Slightly larger for readability */
   line-height: 1.5;
-  color: #e0f7fa; /* Soft contrasting color for readability */
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  color: #e0f7fa; /* Soft contrasting color */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); /* Strong shadow for readability */
 }
+
+.aiko-plugin .image-slide-inner {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Column layout for content */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center items vertically */
+  padding: 20px;
+}
+
 .aiko-plugin .image-slide-inner img {
   border-radius: 50%; /* Circular image */
-  width: 100%;
-  height: auto;
+  width: 120px; /* Fixed width for images */
+  height: 120px; /* Fixed height for images */
   object-fit: cover;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
   transition: transform 0.3s ease;
 }
+
 .aiko-plugin .image-slide-inner img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slightly scale on hover */
 }
+
 .aiko-plugin svg {
   width: 40px;
   height: 40px;
-  stroke: #e0f7fa; /* Adjusted color to match gradient */
+  stroke: #e0f7fa; /* Icon color */
 }
+
 .aiko-control-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
+
 .aiko-control-wrapper .swiper-button-next,
 .aiko-control-wrapper .swiper-button-prev {
-  background-color: #ffeb3b; /* Accent color for buttons */
+  background-color: #ff5722; /* Change button color to a vibrant orange */
   padding: 12px;
-  color: black;
+  color: white; /* Text color for the buttons */
   border-radius: 50%; /* Rounded buttons */
-  font-size: 1.2em;
+  font-size: 1.5em; /* Increased size for visibility */
   transition: background 0.3s ease, transform 0.3s ease;
+  margin: 0 10px; /* Spacing between buttons */
 }
+
 .aiko-control-wrapper .swiper-button-next:hover,
 .aiko-control-wrapper .swiper-button-prev:hover {
-  background-color: #fdd835;
-  transform: scale(1.1);
+  background-color: #e64a19; /* Darker shade on hover */
+  transform: scale(1.1); /* Scale effect on hover */
 }

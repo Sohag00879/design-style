@@ -12,8 +12,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  background-color: black; /* Black background */
-  color: white; /* White text */
+  color: white; /* Default color for text */
 }
 .aiko-plugin .summary-item-list-container.sqs-gallery-container,
 .aiko-plugin .summary-block-header {
@@ -45,32 +44,46 @@
   }
 }
 .aiko-plugin .image-slide {
-  background: black; /* Black background for each item */
+  background: linear-gradient(135deg, #1a237e, #0d47a1); /* Attractive gradient background */
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aiko-plugin .image-slide:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 .aiko-plugin h3 {
   font-size: 1.8em;
-  color: white; /* White font color */
+  color: #ffeb3b; /* Accent color for titles */
   margin: 0 0 10px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 .aiko-plugin p {
   font-size: 1.1em;
   line-height: 1.5;
-  color: white; /* White font color */
+  color: #e0f7fa; /* Soft contrasting color for readability */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 .aiko-plugin .image-slide-inner img {
   border-radius: 50%; /* Circular image */
-  width: 100%; /* Ensure it takes up full space */
+  width: 100%;
   height: auto;
   object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  transition: transform 0.3s ease;
+}
+.aiko-plugin .image-slide-inner img:hover {
+  transform: scale(1.05);
 }
 .aiko-plugin svg {
   width: 40px;
   height: 40px;
-  stroke: white; /* White icon color */
+  stroke: #e0f7fa; /* Adjusted color to match gradient */
 }
 .aiko-control-wrapper {
   display: flex;
@@ -79,14 +92,15 @@
 }
 .aiko-control-wrapper .swiper-button-next,
 .aiko-control-wrapper .swiper-button-prev {
-  background-color:white;
+  background-color: #ffeb3b; /* Accent color for buttons */
   padding: 12px;
   color: black;
   border-radius: 50%; /* Rounded buttons */
   font-size: 1.2em;
-  transition: background 0.5s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 .aiko-control-wrapper .swiper-button-next:hover,
 .aiko-control-wrapper .swiper-button-prev:hover {
-  background-color:gray;
+  background-color: #fdd835;
+  transform: scale(1.1);
 }

@@ -79,7 +79,7 @@
 }
 .aiko-control-wrapper .swiper-button-next,
 .aiko-control-wrapper .swiper-button-prev {
-  background-color: white;
+  background-color:white;
   padding: 12px;
   color: black;
   border-radius: 50%; /* Rounded buttons */
@@ -88,5 +88,5 @@
 }
 .aiko-control-wrapper .swiper-button-next:hover,
 .aiko-control-wrapper .swiper-button-prev:hover {
-  background-color: gray;
+  background-color:gray;
 }

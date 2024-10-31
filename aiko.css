@@ -1,7 +1,6 @@
 .section-with-aiko-slider .content-wrapper {
   box-sizing: border-box !important;
-  padding-top: 50px;
-  /* Add padding to the top for better visibility */
+  padding-top: 50px; /* Add padding to the top for better visibility */
 }
 
 .sqs-gallery-design-carousel {
@@ -17,16 +16,11 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  color: white;
-  /* Default color for text */
-  background: linear-gradient(135deg, #0d47a1, #1a237e);
-  /* Gradient background for the entire plugin */
-  border-radius: 12px;
-  /* Rounded corners for the plugin */
-  padding: 20px;
-  /* Padding inside the plugin */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  /* Shadow for the plugin */
+  color: white; /* Default color for text */
+  background: linear-gradient(135deg, #0d47a1, #1a237e); /* Gradient background for the entire plugin */
+  border-radius: 12px; /* Rounded corners for the plugin */
+  padding: 20px; /* Padding inside the plugin */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for the plugin */
 }
 
 .aiko-plugin .summary-item-list-container.sqs-gallery-container,
@@ -36,142 +30,119 @@
 
 .aiko-plugin .aiko-wrapper {
   display: flex;
-  align-items: flex-start;
-  /* Align items to the top */
-  justify-content: space-between;
-  /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
   max-width: 90%;
+  flex-direction: row-reverse; /* Reverse the order of flex items */
 }
 
 @media only screen and (max-width: 1000px) {
   .aiko-plugin .aiko-wrapper {
-      flex-wrap: wrap;
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
   }
 }
 
 .aiko-plugin .left-part {
-  width: 35%;
-  margin-right: 5%;
-  padding: 20px;
+  width: 35%; /* Image on the left */
+  display: flex; /* Flex to center the image */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  margin-left: 5%; /* Space between image and content */
+  padding: 20px; /* Padding around content */
 }
 
 .aiko-plugin .right-part {
-  width: 60%;
+  width: 60%; /* Content on the right */
+  padding: 20px; /* Padding around content */
 }
 
 @media only screen and (max-width: 640px) {
-
   .aiko-plugin .left-part,
   .aiko-plugin .right-part {
-      width: 100%;
-      margin-right: 0;
-      padding: 10px;
-      /* Reduce padding for smaller screens */
+      width: 100%; /* Full width on smaller screens */
+      margin-left: 0; /* Remove left margin for smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
   }
 }
 
 .aiko-plugin .image-slide {
-  background: linear-gradient(135deg, #ff6f00, #ff8f00);
-  /* Gradient background for image slide */
-  padding: 40px;
-  border-radius: 12px;
-  /* Slightly rounded corners */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  /* Softer shadow */
+  background: linear-gradient(135deg, #ff6f00, #ff8f00); /* Gradient background for image slide */
+  padding: 40px; /* Padding around the slide */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
   color: white;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0px; /* Remove padding for the slide */
 }
 
 .aiko-plugin .image-slide:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02); /* Scale effect on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5); /* Shadow on hover */
 }
 
 .aiko-plugin h3 {
-  font-size: 2em;
-  /* Increase size for prominence */
-  color: #ffeb3b;
-  /* Bright accent color for titles */
-  margin: 0 0 10px;
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
-  /* Strong shadow for readability */
+  font-size: 2em; /* Increase size for prominence */
+  color: #ffeb3b; /* Bright accent color for titles */
+  margin: 0 0 10px; /* Margin below title */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Strong shadow for readability */
 }
 
 .aiko-plugin p {
-  font-size: 1.2em;
-  /* Slightly larger for readability */
-  line-height: 1.5;
-  color: #e0f7fa;
-  /* Soft contrasting color */
-  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-  /* Strong shadow for readability */
+  font-size: 1.2em; /* Slightly larger for readability */
+  line-height: 1.5; /* Line height for better spacing */
+  color: #e0f7fa; /* Soft contrasting color */
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); /* Strong shadow for readability */
 }
 
 .aiko-plugin .image-slide-inner {
-  display: flex;
-  /* Flexbox for alignment */
-  flex-direction: column;
-  /* Column layout for content */
-  align-items: center;
-  /* Center items */
-  justify-content: center;
-  /* Center items vertically */
-  padding: 20px;
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Column layout for content */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: center; /* Center items vertically */
+  padding: 20px; /* Padding around inner content */
 }
 
 .aiko-plugin .image-slide-inner img {
-  border-radius: 50%;
-  /* Circular image */
-  width: 120px;
-  /* Fixed width for images */
-  height: 120px;
-  /* Fixed height for images */
-  object-fit: cover;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-  /* Subtle shadow */
-  transition: transform 0.3s ease;
+  border-radius: 50%; /* Circular image */
+  width: 120px; /* Fixed width for images */
+  height: 120px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Transition for scaling effect */
 }
 
 .aiko-plugin .image-slide-inner img:hover {
-  transform: scale(1.05);
-  /* Slightly scale on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
 }
 
 .aiko-plugin svg {
-  width: 40px;
-  height: 40px;
-  stroke: #e0f7fa;
-  /* Icon color */
+  width: 40px; /* Icon size */
+  height: 40px; /* Icon size */
+  stroke: #e0f7fa; /* Icon color */
 }
 
 .aiko-control-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  display: flex; /* Flex container for controls */
+  justify-content: center; /* Center controls */
+  margin-top: 20px; /* Margin above controls */
 }
 
 .aiko-control-wrapper .swiper-button-next,
 .aiko-control-wrapper .swiper-button-prev {
-  background-color: #ff5722;
-  /* Change button color to a vibrant orange */
-  padding: 12px;
-  color: white;
-  /* Text color for the buttons */
-  border-radius: 50%;
-  /* Rounded buttons */
-  font-size: 1.5em;
-  /* Increased size for visibility */
-  transition: background 0.3s ease, transform 0.3s ease;
-  margin: 0 10px;
-  /* Spacing between buttons */
+  background-color: #ff5722; /* Change button color to a vibrant orange */
+  padding: 12px; /* Padding around buttons */
+  color: white; /* Text color for the buttons */
+  border-radius: 50%; /* Rounded buttons */
+  font-size: 1.5em; /* Increased size for visibility */
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition for hover effects */
+  margin: 0 10px; /* Spacing between buttons */
 }
 
 .aiko-control-wrapper .swiper-button-next:hover,
 .aiko-control-wrapper .swiper-button-prev:hover {
-  background-color: #e64a19;
-  /* Darker shade on hover */
-  transform: scale(1.1);
-  /* Scale effect on hover */
+  background-color: #e64a19; /* Darker shade on hover */
+  transform: scale(1.1); /* Scale effect on hover */
 }
+
